@@ -14,7 +14,7 @@ export const expireUserInfo = () => {
     $username.set("");
     console.log("UserInfoExpired");
 };
-export const updateUserInof = (infoResp: UserInfoResponse) => {
+export const updateUserInfo = (infoResp: UserInfoResponse) => {
     $username.set(infoResp?.username ?? "");
 };
 
@@ -22,5 +22,5 @@ export const updateUserInof = (infoResp: UserInfoResponse) => {
 (async () => {
     // query user info
     // const resp = await requestGet<UserInfoResponse>("/v2/user");
-    // updateUserInof(resp);
+    // updateUserInfo(resp);
 })();
